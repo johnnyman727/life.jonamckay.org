@@ -1,0 +1,33 @@
+---
+layout: default
+prev: "&laquo;&nbsp;Previous"
+next: "Next&nbsp;&raquo;"
+---
+
+<h1>life.aaronjgreenberg.com</h1>
+
+{% for post in paginator.posts %}
+<div class="post">
+  {{ post.content }}
+</div>
+{% endfor %}
+
+<div class="pagination">
+  <div class="prev">
+    {% if paginator.previous_page %}
+    <a href="{{ paginator.previous_page_path }}">{{ page.prev }}</a>
+    {% else %}
+    <span>{{ page.prev }}</span>
+    {% endif %}
+  </div>
+  <div class="page">
+    <span>Page {{ paginator.page }} / {{ paginator.total_pages }}</span>
+  </div>
+  <div class="next">
+    {% if paginator.next_page %}
+    <a href="{{ paginator.next_page_path }}">{{ page.next }}</a>
+    {% else %}
+    <span>{{ page.next }}</span>
+    {% endif %}
+  </div>
+</div>
