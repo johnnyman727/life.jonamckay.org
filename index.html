@@ -4,10 +4,10 @@ prev: "&laquo;&nbsp;Previous"
 next: "Next&nbsp;&raquo;"
 ---
 
-<h1>life.aaronjgreenberg.com</h1>
+{% include header.html %}
 
 {% for post in paginator.posts %}
-<div class="post">
+<div>
   {{ post.content }}
 </div>
 {% endfor %}

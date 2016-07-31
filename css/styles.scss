@@ -1,0 +1,77 @@
+---
+---
+
+$spacing: 5rem;
+$brand: #2e8540;
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  color: #555;
+  font-family: "Menlo", "Consolas", monospace;
+  font-size: 18px;
+}
+
+header {
+  padding-top: 0.8 * $spacing;
+  padding-bottom: 0.8 * $spacing;
+}
+
+h1 {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+h1,
+time {
+  color: #333;
+  font-weight: bold;
+}
+
+a { text-decoration: none; }
+a:hover { color: $brand; }
+
+p {
+  margin-top: 0;
+  margin-bottom: $spacing;
+}
+
+img,
+video {
+  display: block;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+img { width: 100%; }
+
+main {
+  width: 50%;
+  max-width: 1280px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.pagination {
+  width: 100%;
+  float: left;
+  margin-bottom: $spacing;
+}
+
+.pagination div {
+  float: left;
+}
+
+.prev { width: 25%; }
+.page {
+  width: 50%;
+  text-align: center;
+}
+.next {
+  width: 25%;
+  text-align: right;
+}
