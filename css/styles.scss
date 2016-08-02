@@ -3,17 +3,27 @@
 
 $spacing: 5rem;
 $brand: #2e8540;
+$break: 700px;
 
 html,
 body {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
+
+*,
+*:before,
+*:after { box-sizing: inherit; }
 
 body {
   color: #555;
   font-family: "Menlo", "Consolas", monospace;
-  font-size: 18px;
+  font-size: 12px;
+}
+
+@media (min-width: $break) {
+  body { font-size: 18px; }
 }
 
 header {
@@ -58,10 +68,18 @@ video {
 img { width: 100%; }
 
 main {
-  width: 50%;
+  width: 100%;
   max-width: 1280px;
   margin: 0 auto;
+  padding: 0 1rem;
   overflow: hidden;
+}
+
+@media (min-width: $break) {
+  main {
+    width: 50%;
+    padding: 0;
+  }
 }
 
 .pagination {
