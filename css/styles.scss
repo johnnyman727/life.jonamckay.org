@@ -27,8 +27,8 @@ body {
 }
 
 header {
-  padding-top: 0.8 * $spacing;
-  padding-bottom: 0.8 * $spacing;
+  padding-top: .8 * $spacing;
+  padding-bottom: .4 * $spacing;
 }
 
 h1 {
@@ -80,6 +80,11 @@ main {
     width: 50%;
     padding: 0;
   }
+}
+
+.subscription {
+  margin-bottom: .8 * $spacing;
+  font-size: .95rem;
 }
 
 .pagination {
