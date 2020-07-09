@@ -3,5 +3,5 @@ paginate: 10
 paginate_path: /page/:num
 assets_url: https://s3.amazonaws.com/life.aaronjgreenberg.com
 
-gems:
+plugins:
   - jekyll-paginate
