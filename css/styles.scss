@@ -83,8 +83,22 @@ main {
 }
 
 .subscription {
-  margin-bottom: .8 * $spacing;
+  margin-bottom: .1 * $spacing;
   font-size: .95rem;
+}
+
+.friends {
+  margin-bottom: .4 * $spacing;
+}
+
+.friends * {
+  display: inline-block;
+  padding: 0;
+  font-size: .95rem;
+}
+
+.friends li {
+  display: inline list-item;
 }
 
 .pagination {
