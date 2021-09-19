@@ -1,7 +1,7 @@
 permalink: /:title
 paginate: 10
 paginate_path: /page/:num
-assets_url: https://s3.us-east-2.amazonaws.com/since30.jonmckay.org/
+assets_url: https://s3.us-east-2.amazonaws.com/since30.jonmckay.org
 
 plugins:
   - jekyll-paginate
